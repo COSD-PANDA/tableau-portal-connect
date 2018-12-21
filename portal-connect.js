@@ -63,8 +63,7 @@ function loadJSON(path, cb, isLocal) {
   console.log(isLocal);
   if(isLocal) {
     path_u = path + ".json";
-  }
-  else {
+  } else {
     path_u = "https://datasd.github.io/tableau-portal-connect/" + path;
   }
   console.log(path_u);
