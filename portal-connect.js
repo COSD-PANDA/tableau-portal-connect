@@ -64,7 +64,7 @@ function loadJSON(path, cb, isLocal) {
     obj.open("GET", "json/" + path + ".json", true);
   }
   else {
-    obj.open("GET", path, true);
+    obj.open("GET", "https://datasd.github.io/tableau-portal-connect/" + path , true);
   }
   obj.onreadystatechange = function() {
     if (obj.readyState == 4 && obj.status == "200"){
