@@ -6,7 +6,7 @@
   var myConnector = tableau.makeConnector("id");
   myConnector.getSchema = function(schemaCallback) {
     var tables = new Promise(function(resolve, reject) {
-      loadJSON("DataPortal", function(json) {
+      loadJSON("https://datasd.github.io/tableau-portal-connect/DataPortal.json", function(json) {
         var tableName = tableau.connectionData;
         var obj = JSON.parse(json);
         var tableList = [];
