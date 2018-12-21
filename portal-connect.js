@@ -61,7 +61,7 @@ function loadJSON(path, cb, isLocal) {
   var obj = new XMLHttpRequest();
   obj.overrideMimeType("application/json");
   if(isLocal) {
-    obj.open("GET", "../json/" + path + ".json", true);
+    obj.open("GET", path + ".json", true);
   }
   obj.onreadystatechange = function() {
     if (obj.readyState == 4 && obj.status == "200"){
