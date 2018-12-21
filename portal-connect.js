@@ -60,12 +60,16 @@
 function loadJSON(path, cb, isLocal) {
   var obj = new XMLHttpRequest();
   obj.overrideMimeType("application/json");
+  console.log(isLocal);
+  console.
   if(isLocal) {
-    obj.open("GET", path + ".json", true);
+    path_u = path + ".json";
   }
   else {
-    obj.open("GET", "https://datasd.github.io/tableau-portal-connect/" + path , true);
+    path_u = "https://datasd.github.io/tableau-portal-connect/" + path;
   }
+  console.log(path_u);
+  obj.open("GET", path_u , true);
   obj.onreadystatechange = function() {
     if (obj.readyState == 4 && obj.status == "200"){
       cb(obj.responseText);
