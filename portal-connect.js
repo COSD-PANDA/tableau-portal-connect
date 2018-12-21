@@ -25,7 +25,7 @@
   }
 
   myConnector.getData = function(table, doneCallback) {
-    var data_url = "http://seshat.datasd.org/";
+    var data_url = "https://seshat.datasd.org/";
     var tablePrefix = table.tableInfo.id.substring(0,3);
     var tableYear = table.tableInfo.id.substring(3);
     if (tablePrefix == "gid") {
