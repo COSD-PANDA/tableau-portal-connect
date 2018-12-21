@@ -6,7 +6,7 @@
   var myConnector = tableau.makeConnector("id");
   myConnector.getSchema = function(schemaCallback) {
     var tables = new Promise(function(resolve, reject) {
-      loadJSON("GIDTableInfoData", function(json) {
+      loadJSON("DataPortal", function(json) {
         var tableName = tableau.connectionData;
         var obj = JSON.parse(json);
         var tableList = [];
@@ -25,12 +25,16 @@
   }
 
   myConnector.getData = function(table, doneCallback) {
-    var gid_data = table.tableInfo.id;
-    var gid_year = gid_data.substring(3)
-    var gid_url = "http://seshat.datasd.org/get_it_done_311/get_it_done_";
-    gid_url += gid_year;
-    gid_url += "_requests_datasd.csv"
-    $.get(gid_url, function( data ) {
+    var data_url = "http://seshat.datasd.org/";
+    var tablePrefix = table.tableInfo.id.substring(0,3);
+    var tableYear = table.tableInfo.id.substring(3);
+    if (tablePrefix == "gid") {
+      data_url += "get_it_done_311/get_it_done_";
+      data_url += tableYear;
+      data_url += "_requests";
+    }
+    data_url += "_datasd.csv";
+    $.get(data_url, function( data ) {
       var result = $.csv.toObjects(data),tableData = result;
       table.appendRows(tableData);
       doneCallback();
