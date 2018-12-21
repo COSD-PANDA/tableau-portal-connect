@@ -61,7 +61,6 @@ function loadJSON(path, cb, isLocal) {
   var obj = new XMLHttpRequest();
   obj.overrideMimeType("application/json");
   console.log(isLocal);
-  console.
   if(isLocal) {
     path_u = path + ".json";
   }
