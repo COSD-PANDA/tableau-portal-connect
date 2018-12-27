@@ -1,0 +1,53 @@
+{
+  "tables" : [
+    {
+      "id" : "gid2016",
+      "alias" : "get_it_done_2016",
+      "columns": [
+        {"id": "service_request_id", "dataType": "int"},
+        {"id": "requested_datetime","dataType": "datetime"}, 
+        {"id": "case_age_days","dataType": "int"}, 
+        {"id": "service_name","dataType": "string"},
+        {"id": "case_record_type","dataType": "string"},
+        {"id": "updated_datetime","dataType": "datetime"},
+        {"id": "status","dataType": "string"},
+        {"id": "lat","dataType": "float"},
+        {"id": "long","dataType": "float"},
+        {"id": "district","dataType": "int"},
+        {"id": "case_origin","dataType": "string"},
+        {"id": "referred_department","dataType": "string"}]
+    },{
+      "id" : "gid2017",
+      "alias" : "get_it_done_2017",
+      "columns": [
+        {"id": "service_request_id", "dataType": "int"},
+        {"id": "requested_datetime","dataType": "datetime"}, 
+        {"id": "case_age_days","dataType": "int"}, 
+        {"id": "service_name","dataType": "string"},
+        {"id": "case_record_type","dataType": "string"},
+        {"id": "updated_datetime","dataType": "datetime"},
+        {"id": "status","dataType": "string"},
+        {"id": "lat","dataType": "float"},
+        {"id": "long","dataType": "float"},
+        {"id": "district","dataType": "int"},
+        {"id": "case_origin","dataType": "string"},
+        {"id": "referred_department","dataType": "string"}]
+    },{
+      "id" : "gid2018",
+      "alias" : "get_it_done_2018",
+      "columns": [
+        {"id": "service_request_id", "dataType": "int"},
+        {"id": "requested_datetime","dataType": "datetime"}, 
+        {"id": "case_age_days","dataType": "int"}, 
+        {"id": "service_name","dataType": "string"},
+        {"id": "case_record_type","dataType": "string"},
+        {"id": "updated_datetime","dataType": "datetime"},
+        {"id": "status","dataType": "string"},
+        {"id": "lat","dataType": "float"},
+        {"id": "long","dataType": "float"},
+        {"id": "district","dataType": "int"},
+        {"id": "case_origin","dataType": "string"},
+        {"id": "referred_department","dataType": "string"}]
+    }
+  ]
+}
