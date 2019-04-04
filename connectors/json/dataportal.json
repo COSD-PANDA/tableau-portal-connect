@@ -20,7 +20,7 @@
         {"id": "comm_plan_name","dataType": "string"},
         {"id": "park_name","dataType": "string"},
         {"id": "case_origin","dataType": "string"},
-        {"id": "referred_department","dataType": "string"},
+        {"id": "referred","dataType": "string"},
         {"id": "public_description","dataType": "string"}
       ]
     },{
@@ -43,7 +43,7 @@
         {"id": "comm_plan_name","dataType": "string"},
         {"id": "park_name","dataType": "string"},
         {"id": "case_origin","dataType": "string"},
-        {"id": "referred_department","dataType": "string"},
+        {"id": "referred","dataType": "string"},
         {"id": "public_description","dataType": "string"}]
     },{
       "id" : "gid2018",
@@ -65,7 +65,7 @@
         {"id": "comm_plan_name","dataType": "string"},
         {"id": "park_name","dataType": "string"},
         {"id": "case_origin","dataType": "string"},
-        {"id": "referred_department","dataType": "string"},
+        {"id": "referred","dataType": "string"},
         {"id": "public_description","dataType": "string"}]
     },{
       "id" : "gid2019",
@@ -87,7 +87,7 @@
         {"id": "comm_plan_name","dataType": "string"},
         {"id": "park_name","dataType": "string"},
         {"id": "case_origin","dataType": "string"},
-        {"id": "referred_department","dataType": "string"},
+        {"id": "referred","dataType": "string"},
         {"id": "public_description","dataType": "string"}]
     }
   ]
