@@ -25,12 +25,21 @@
   }
 
   myConnector.getData = function(table, doneCallback) {
-    var gid_data = table.tableInfo.id;
-    var gid_year = gid_data.substring(3)
-    var gid_url = "http://seshat.datasd.org/get_it_done_311/get_it_done_";
-    gid_url += gid_year;
-    gid_url += "_requests_datasd.csv"
-    $.get(gid_url, function( data ) {
+    var table_id = table.tableInfo.id;
+    var table_url_pre = "http://seshat.datasd.org/"
+    
+    switch (table_id) {
+      case 'pts':
+        table_url += "dsd/dsd_permits_all_pts.csv";
+        break;
+      case 'gid':
+        table_url += "get_it_done_311/get_it_done_requests_datasd.csv";
+        break;
+      default:
+        table_url += "get_it_done_311/get_it_done_requests_datasd.csv";
+    }
+    
+    $.get(table_url, function( data ) {
       var result = $.csv.toObjects(data),tableData = result;
       table.appendRows(tableData);
       doneCallback();
