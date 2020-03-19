@@ -30,13 +30,13 @@
     
     switch (table_id) {
       case 'pts':
-        table_url += "dsd/dsd_permits_all_pts.csv";
+        var table_url += "dsd/dsd_permits_all_pts.csv";
         break;
       case 'gid':
-        table_url += "get_it_done_311/get_it_done_requests_datasd.csv";
+        var table_url += "get_it_done_311/get_it_done_requests_datasd.csv";
         break;
       default:
-        table_url += "get_it_done_311/get_it_done_requests_datasd.csv";
+        var table_url += "get_it_done_311/get_it_done_requests_datasd.csv";
     }
     
     $.get(table_url, function( data ) {
