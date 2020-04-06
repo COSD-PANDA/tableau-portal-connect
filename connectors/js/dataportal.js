@@ -32,6 +32,9 @@
       case 'pts':
         var table_url = table_url_pre + "dsd/dsd_permits_all_pts.csv";
         break;
+      case 'accela':
+        var table_url = table_url_pre + "dsd/dsd_permits_all_accela.csv";
+        break;
       case 'gid':
         var table_url = table_url_pre + "get_it_done_311/get_it_done_requests_datasd.csv";
         break;
