@@ -36,7 +36,7 @@
         var table_url = table_url_pre + "dsd/dsd_permits_all_accela.csv";
         break;
       case 'gid':
-        var table_url = table_url_pre + "get_it_done_311/get_it_done_requests_datasd.csv";
+        var table_url = table_url_pre + "get_it_done_311/get_it_done_2016_requests_datasd_v1.csv";
         break;
       default:
         var table_url = table_url_pre + "get_it_done_311/get_it_done_requests_datasd.csv";
