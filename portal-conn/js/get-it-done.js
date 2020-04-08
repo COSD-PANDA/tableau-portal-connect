@@ -21,8 +21,7 @@
         {"id": "comm_plan_name","dataType": "string"},
         {"id": "park_name","dataType": "string"},
         {"id": "case_origin","dataType": "string"},
-        {"id": "referred","dataType": "string"},
-        {"id": "public_description","dataType": "string"}];
+        {"id": "referred","dataType": "string"}];
 
         var tableSchema = {
             id: "gid",
