@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open Data Portal web connector</title>
+    <!--  In order to use promises, like this example, you will need to include this polyfill to add promises
+          functionality to the built in Tableau WDC browser (it does not have ES6 functionality by default)    -->
+    <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+    <script src="https://connectors.tableau.com/libs/tableauwdc-2.0.2.js" type="text/javascript"></script>
+    <script src="../js/dsd-permits-accela.js"></script>
+    <script src="../js/jquery.csv.min.js" type="text/javascript"></script>
+    <style>
+      * {
+        padding: 0px;
+        margin:  0px;
+        font-family: Helvetica, sans-serif;
+        color: #1c1c1c;
+      }
+      body {
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      h1 {
+        margin-top:  30px;
+        font-weight: normal;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+      button {
+        padding: 6px 12px;
+        background-color: #5cb85c;
+        border: 2px solid #4cae4c;
+        color: white;
+        border-radius: 4px;
+        margin: 0 auto;
+        font-size: 1.2em;
+        transition: background-color .4s, border-color .4s;
+      }
+      button:hover{
+        cursor: pointer;
+        background-color: #3c9e3c;
+        border-color: #3c9e3c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DSD Permits Accela csv connector</h1>-
+    <button id="submitButton">Get Data</button>
+  </body>
+</html>
