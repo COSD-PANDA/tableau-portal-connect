@@ -10,3 +10,6 @@ https://datasd.github.io/tableau-portal-connect/portal-conn/html/dsd-permits-pts
 DSD Permits Set 2:
 https://datasd.github.io/tableau-portal-connect/portal-conn/html/dsd-permits-accela.html
 
+DSD Project Tags:
+https://datasd.github.io/tableau-portal-connect/portal-conn/html/dsd-project-tags.html
+
